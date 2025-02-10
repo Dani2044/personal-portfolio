@@ -1,175 +1,208 @@
-/* Body Style */
+/* ============================================================
+   Personal portfolio — design system & shared layout
+   ============================================================ */
+
+:root {
+  --bg: #070a13;
+  --surface: #0d1322;
+  --surface-2: #121a2e;
+  --border: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(148, 163, 184, 0.28);
+  --text: #e6ecf5;
+  --muted: #94a1b8;
+  --accent: #38bdf8;
+  --accent-2: #818cf8;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 10px 40px -18px rgba(0, 0, 0, 0.6);
+  --grad: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  --font-head: 'Sora', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header Style */
-.header {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3rem;
-    width: 95%;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 60px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
-/* Menu Bar Style */
-.menu_bar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+.container {
+  width: min(1080px, 92vw);
+  margin: 0 auto;
 }
 
-/* Menu Title Style */
-.menu_bar h1 {
-    color: white;
+/* ---------- Header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(7, 10, 19, 0.82);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
 }
 
-/* List Style for Menu */
-.unordered_list {
-    display: flex;
-    gap: 50px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-wrap: nowrap;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 0;
 }
 
-/* Menu Item Style */
-.unordered_list li {
-    font-size: 1.2rem;
-    transition: color 0.4s ease, transform 0.2s ease;
-    padding: 0rem 1.2rem;
-    border-radius: 5px;
-    white-space: nowrap;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--text);
+}
+.brand:hover { text-decoration: none; }
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--grad);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #061018;
 }
 
-/* Menu Item Hover Effect */
-.unordered_list li:hover {
-    background-color: #ffcc00;
-    color: black;
-    transform: scale(1.05);
+.brand-name { font-family: var(--font-head); font-weight: 600; font-size: 1.02rem; }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
 }
 
-/* Links in Menu */
-.unordered_list a {
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.nav-links a {
+  color: var(--muted);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+.nav-links a:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
+.nav-links a.active {
+  color: #061018;
+  background: var(--grad);
+  font-weight: 600;
 }
 
-/* Hover effect for links */
-.unordered_list a:hover {
-    color: black;
+/* ---------- Buttons & badges ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.btn:hover { text-decoration: none; transform: translateY(-1px); }
+.btn-primary { background: var(--grad); color: #061018; box-shadow: 0 8px 24px -12px rgba(56, 189, 248, 0.7); }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--border-strong); }
+.btn-ghost:hover { border-color: var(--accent); }
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
-/* Main Section Style */
-main {
-    background-image: url(../images/wood_background.jpg);
-    margin-top: 110px;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    flex: 1;
+/* ---------- Generic layout helpers ---------- */
+
+.page-title {
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  margin: 2.4rem 0 0.6rem;
 }
 
-/* Heading Style */
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: black;
-    position:relative;
-    display: inline-block;
+.lead { color: var(--muted); font-size: 1.08rem; max-width: 62ch; }
+
+.spacer-top { margin-top: 3rem; }
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow);
 }
 
-/* Heading underline */
-h1::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -7px;
-    left: 0;
-    height: 5px;
-    background: #0099cc;
+.card h3 { font-size: 1.12rem; margin-bottom: 0.5rem; }
+.card p, .card li { color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  margin-top: 4.5rem;
+  border-top: 1px solid var(--border);
+  padding: 2.2rem 0 2.6rem;
 }
 
-/* Subheading Style */
-h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-    color: black;
-    position:relative;
-    display: inline-block;
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-/* Subheading underline */
-h2::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -7px;
-    left: 0;
-    height: 5px;
-    background: #0099cc;
-}
+.footer-note { color: var(--muted); font-size: 0.9rem; }
 
-/* Footer Style */
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: black;
-    color: white;
-    width: 98.31%;
-    margin-top: auto;
-}
+.social-links { display: flex; gap: 0.9rem; align-items: center; }
 
-/* Social Links Style */
-footer .social-links {
-    margin-bottom: 1rem;
+.social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: grid;
+  place-items: center;
+  transition: border-color 0.15s ease, transform 0.15s ease;
 }
+.social-links a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.social-links img { width: 22px; height: 22px; }
 
-/* Social Links Hover Effect */
-footer .social-links a {
-    margin: 0 1rem;
-}
-
-footer .social-links img {
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-/* Hover Effects on Social Icons */
-footer .social-links a:hover img {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-}
-
-/* Footer Text Style */
-footer p {
-    font-size: 1rem;
-    color: #ddd;
-    margin-top: 0.5rem;
+@media (max-width: 640px) {
+  .nav-links { gap: 0.1rem; }
+  .nav-links a { padding: 0.4rem 0.6rem; font-size: 0.85rem; }
+  .brand-name { display: none; }
+  .footer-inner { justify-content: center; text-align: center; }
 }

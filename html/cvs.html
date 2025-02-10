@@ -3,194 +3,196 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume - Daniel Felipe Castro Moreno</title>
+    <title>Resume — Daniel Felipe Castro Moreno</title>
     <meta
       name="description"
-      content="Resume of Daniel Felipe Castro Moreno, Systems Engineering student."
+      content="Resume of Daniel Felipe Castro Moreno: education, experience, achievements, skills and contact."
     />
     <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/header_footer.css" />
     <link rel="stylesheet" href="../css/cvs.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="menu_bar">
-        <img src="../images/world.jpeg" height="50" width="50" alt="Globe" />
-        <h1 class="title">Daniel Felipe Castro Moreno</h1>
-        <nav>
-          <ul class="unordered_list">
-            <li><a href="index.html">📌 Home</a></li>
-            <li><a href="data.html">📜 Biography</a></li>
-            <li><a href="cvs.html">🗂 Resume</a></li>
-            <li><a href="hobbies.html">🎭 Hobbies</a></li>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DC</span>
+          <span class="brand-name">Daniel Felipe Castro Moreno</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data.html">Biography</a></li>
+            <li><a href="cvs.html" class="active">Resume</a></li>
+            <li><a href="hobbies.html">Interests</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <h1>Resume</h1>
 
-      <!-- Index -->
-      <section class="index-section">
-        <h2>Index</h2>
-        <ul>
-          <li>
-            <a href="#group-education">Education & Experience</a>
+    <main class="container">
+      <h1 class="page-title">Resume</h1>
+      <p class="lead">
+        Education, experience, skills and achievements.
+      </p>
+
+      <nav class="resume-nav" aria-label="Resume sections">
+        <a href="#group-education">Education</a>
+        <a href="#group-skills">Skills &amp; languages</a>
+        <a href="#group-contact">References &amp; contact</a>
+      </nav>
+
+      <section id="group-education" class="resume-group">
+        <h2>Education &amp; experience</h2>
+        <div class="resume-grid">
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Education</h3>
             <ul>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#achievements">Academic Achievements</a></li>
-              <li><a href="#experience">Work Experience</a></li>
+              <li>
+                <span class="strong">Systems Engineering</span> —
+                <span class="sub">fifth semester, 2025</span><br />
+                <span class="sub">Pontificia Universidad Javeriana</span>
+              </li>
+              <li>
+                <span class="strong">High School Diploma</span> —
+                <span class="sub">2022</span><br />
+                <span class="sub">Anglo American School</span>
+              </li>
             </ul>
-          </li>
-          <li>
-            <a href="#group-skills">Skills & Languages</a>
+          </article>
+
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Academic achievements</h3>
             <ul>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#languages">Languages</a></li>
+              <li>Semester Scholarship for Academic Excellence — first and second semesters.</li>
+              <li>Saber 11 national test: 438 points.</li>
+              <li>Scholarship for Italian language mobility.</li>
+              <li>Finalist in the Colombian Chemistry Olympiad 2022.</li>
             </ul>
-          </li>
-          <li>
-            <a href="#group-contact">References & Contact</a>
+          </article>
+
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Work experience</h3>
             <ul>
-              <li><a href="#references">References</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li>
+                <span class="strong">Software Development Assistant</span> —
+                <span class="sub">December 2024</span><br />
+                <span class="sub">Infotegra</span>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </section><br />
-
-      <!-- Group 1: Education & Work Experience -->
-      <section id="group-education" class="group-section">
-        <h2>Education & Work Experience</h2>
-
-        <section id="education" class="gradient-section">
-          <h3>Education</h3>
-          <ol class="no-style">
-            <li>
-              <strong>2025 - Fifth semester of Systems Engineering</strong
-              ><br />
-              Pontifical Xavierian University
-            </li>
-            <li>
-              <strong>2022 - High School Diploma</strong><br />
-              Anglo American School
-            </li>
-          </ol>
-        </section>
-
-        <section id="achievements" class="gradient-section">
-          <h3>Academic Achievements</h3>
-          <ul class="no-style">
-            <li>
-              Semester Scholarship for Academic Excellence: First and Second
-              Semester.
-            </li>
-            <li>Saber 11 Test: 438 points.</li>
-            <li>Scholarship for Italian language mobility.</li>
-            <li>Finalist in the Colombian Chemistry Olympiad 2022.</li>
-          </ul>
-        </section>
-
-        <section id="experience" class="gradient-section">
-          <h3>Work Experience</h3>
-          <ul class="no-style">
-            <li>
-              <strong>December 2024 - Software Development Assistant</strong
-              ><br />
-              Infotegra
-            </li>
-          </ul>
-        </section>
+          </article>
+        </div>
       </section>
 
-      <!-- Group 2: Skills & Languages -->
-      <section id="group-skills" class="group-section">
-        <h2>Skills & Languages</h2>
+      <section id="group-skills" class="resume-group">
+        <h2>Skills &amp; languages</h2>
+        <div class="resume-grid">
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Skills</h3>
+            <ul>
+              <li>Goal-oriented</li>
+              <li>Communication</li>
+              <li>Decision-making</li>
+              <li>Time management</li>
+              <li>Teamwork</li>
+              <li>Strategic thinking</li>
+            </ul>
+          </article>
 
-        <section id="skills" class="gradient-section">
-          <h3>Skills</h3>
-          <ul class="no-style">
-            <li>Goal-Oriented</li>
-            <li>Communication</li>
-            <li>Decision-Making</li>
-            <li>Time Management</li>
-            <li>Teamwork</li>
-            <li>Strategic Thinking</li>
-          </ul>
-        </section>
-
-        <section id="languages" class="gradient-section">
-          <h3>Languages</h3>
-          <ul class="no-style">
-            <li><strong>English:</strong> C1 - First Certificate in English</li>
-            <li><strong>Italian:</strong> B2 - PLIDA</li>
-          </ul>
-        </section>
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Languages</h3>
+            <ul>
+              <li>
+                <span class="strong">English:</span> C1 — First Certificate in English
+              </li>
+              <li>
+                <span class="strong">Italian:</span> B2 — PLIDA
+              </li>
+              <li><span class="strong">Spanish:</span> native</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <!-- Group 3: References & Contact -->
-      <section id="group-contact" class="group-section">
-        <h2>References & Contact</h2>
+      <section id="group-contact" class="resume-group">
+        <h2>References &amp; contact</h2>
+        <div class="resume-grid">
+          <article class="card resume-item">
+            <h3><span class="mark"></span> References</h3>
+            <ul>
+              <li>
+                <span class="strong">Jaime Solorzano</span><br />
+                <span class="sub">Manager, Infotegra — (300) 575 4585</span>
+              </li>
+              <li>
+                <span class="strong">Ricardo Díaz</span><br />
+                <span class="sub">Manager, Heliosti — (316) 523 9875</span>
+              </li>
+            </ul>
+          </article>
 
-        <section id="references" class="gradient-section">
-          <h3>References</h3>
-          <ul class="no-style">
-            <li>
-              <strong>Jaime Solorzano</strong><br />
-              Manager Infotegra<br />
-              (300) 5754585
-            </li>
-            <li>
-              <strong>Ricardo Díaz</strong><br />
-              Manager Heliosti<br />
-              (316) 5239875
-            </li>
-          </ul>
-        </section>
-
-        <section id="contact" class="gradient-section">
-          <h3>Contact</h3>
-          <ul class="no-style">
-            <li><strong>Phone:</strong> (+57) 3194966224</li>
-            <li><strong>Email:</strong> danielfcm2004@gmail.com</li>
-            <li>
-              <strong>Address:</strong> Cra. 57 No. 119A - 60 tower 3, Apt. 510
-            </li>
-          </ul>
-        </section>
+          <article class="card resume-item">
+            <h3><span class="mark"></span> Contact</h3>
+            <ul class="contact-list">
+              <li><span class="tag">Phone</span><span>(+57) 319 496 6224</span></li>
+              <li><span class="tag">Email</span><span>danielfcm2004@gmail.com</span></li>
+              <li>
+                <span class="tag">Address</span>
+                <span>Cra. 57 No. 119A - 60 tower 3, apt. 510, Bogotá</span>
+              </li>
+              <li>
+                <span class="tag">GitHub</span>
+                <a href="https://github.com/Dani2044" target="_blank" rel="noopener">github.com/Dani2044</a>
+              </li>
+              <li>
+                <span class="tag">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/daniel-felipe-castro-moreno"
+                  target="_blank"
+                  rel="noopener"
+                  >daniel-felipe-castro-moreno</a
+                >
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="social-links">
-        <a href="https://github.com/Dani2044" target="_blank" title="GitHub">
-          <img src="../images/github.png" height="40" width="40" alt="GitHub" />
-        </a>
-        <a
-          href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
-          target="_blank"
-          title="Instagram"
-        >
-          <img
-            src="../images/instagram.png"
-            height="40"
-            width="40"
-            alt="Instagram"
-          />
-        </a>
-        <a
-          href="www.linkedin.com/in/daniel-felipe-castro-moreno"
-          target="_blank"
-          title="Linkedin"
-        >
-          <img
-            src="../images/linkedin.png"
-            height="40"
-            width="40"
-            alt="Linkedin"
-          />
-        </a>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">
+          &copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Dani2044" target="_blank" rel="noopener" title="GitHub">
+            <img src="../images/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+          >
+            <img src="../images/instagram.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-felipe-castro-moreno"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+          >
+            <img src="../images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
       </div>
-      <p>&copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.</p>
     </footer>
   </body>
 </html>

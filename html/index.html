@@ -3,117 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - Daniel Felipe Castro Moreno</title>
+    <title>Daniel Felipe Castro Moreno — Systems Engineering Student</title>
     <meta
       name="description"
-      content="Learn about Daniel Castro, his experience, passion, and skills"
+      content="Daniel Felipe Castro Moreno, Systems Engineering student at Pontificia Universidad Javeriana. Software engineering, AI and data-driven projects."
     />
     <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/header_footer.css" />
     <link rel="stylesheet" href="../css/welcome.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="menu_bar">
-        <img src="../images/world.jpeg" height="50" width="50" alt="Globe" />
-        <h1>Daniel Felipe Castro Moreno</h1>
-        <nav>
-          <ul class="unordered_list">
-            <li><a href="index.html">📌 Home</a></li>
-            <li><a href="data.html">📜 Biography</a></li>
-            <li><a href="cvs.html">🗂 Resume</a></li>
-            <li><a href="hobbies.html">🎭 Hobbies</a></li>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DC</span>
+          <span class="brand-name">Daniel Felipe Castro Moreno</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="data.html">Biography</a></li>
+            <li><a href="cvs.html">Resume</a></li>
+            <li><a href="hobbies.html">Interests</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <h1>About Me</h1>
-      <br />
-
-      <!-- General information -->
-      <section class="welcome_section">
-        <img
-          src="../images/profile_picture.jpg"
-          height="200"
-          width="250"
-          alt="Tech Passion"
-        />
-        <p>
-          I am a fifth-semester Systems Engineering student with a strong
-          foundation in programming languages such as C++, C, Java, and Python,
-          as well as experience in SQL database management. My passion for
-          technology began at a young age, experimenting with software, coding,
-          and automation. Over the years, I have developed a keen interest in
-          artificial intelligence and software engineering.
-        </p>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="hero-eyebrow">
+              <span class="badge">Systems Engineering — Javeriana</span>
+            </div>
+            <h1 class="hero-name">
+              Hi, I'm <span class="grad">Daniel Castro</span>.
+            </h1>
+            <p class="hero-role">
+              Software engineering student focused on AI, automation and clean code.
+            </p>
+            <p class="hero-copy">
+              I study Systems Engineering at Pontificia Universidad Javeriana and
+              build projects in C++, Java, Python and TypeScript — from
+              numerical methods and search algorithms to full applications. I
+              was awarded the Academic Merit Scholarship for two consecutive
+              semesters and have worked on real systems during an internship at
+              Infotegra.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="cvs.html">View resume</a>
+              <a class="btn btn-ghost" href="https://github.com/Dani2044" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/daniel-felipe-castro-moreno"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </div>
+            <div class="hero-stats">
+              <div class="stat"><b>C1</b><span>English — FCE</span></div>
+              <div class="stat"><b>B2</b><span>Italian — PLIDA</span></div>
+              <div class="stat"><b>Top GPAs</b><span>Faculty scholarship</span></div>
+            </div>
+          </div>
+          <img
+            src="../images/profile_picture.jpg"
+            alt="Portrait of Daniel Castro"
+            class="hero-portrait"
+          />
+        </div>
       </section>
 
-      <!-- Interests -->
-      <section class="welcome_section right">
-        <img
-          src="../images/city.jpg"
-          height="200"
-          width="250"
-          alt="Creative Projects"
-        />
-        <p>
-          Creativity is a crucial part of my journey. Whether it's developing
-          automation scripts, designing intelligent solutions, or exploring new
-          programming paradigms, I enjoy pushing the boundaries of what's
-          possible. I have been awarded the Academic Merit Scholarship for two
-          consecutive semesters for achieving the highest GPA in the faculty.
-        </p>
-      </section>
-
-      <!-- Scientific Exploration -->
-      <section class="welcome_section">
-        <img
-          src="../images/science.jpg"
-          height="200"
-          width="250"
-          alt="Scientific Exploration"
-        />
-        <p>
-          Beyond coding, I am fascinated by science and research. I constantly
-          seek to expand my knowledge by reading scientific papers, engaging in
-          discussions, and applying insights to my projects. This website is a
-          reflection of my experiences and interests. Thank you for visiting!
-        </p>
+      <section class="container">
+        <p class="section-label">Highlights</p>
+        <div class="highlights">
+          <article class="card highlight">
+            <h3><span class="dot"></span> Academic merit</h3>
+            <p>
+              Academic Merit Scholarship for the first and second semesters —
+              highest GPA in the faculty. Saber 11 test: 438 points.
+            </p>
+          </article>
+          <article class="card highlight">
+            <h3><span class="dot"></span> Work experience</h3>
+            <p>
+              Software Development Assistant internship at Infotegra
+              (December 2024), collaborating on real products in a professional
+              team.
+            </p>
+          </article>
+          <article class="card highlight">
+            <h3><span class="dot"></span> Research-minded</h3>
+            <p>
+              I enjoy reading scientific papers and applying what I learn —
+              from search algorithms and numerical methods to data pipelines.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="social-links">
-        <a href="https://github.com/Dani2044" target="_blank" title="GitHub">
-          <img src="../images/github.png" height="40" width="40" alt="GitHub" />
-        </a>
-        <a
-          href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
-          target="_blank"
-          title="Instagram"
-        >
-          <img
-            src="../images/instagram.png"
-            height="40"
-            width="40"
-            alt="Instagram"
-          />
-        </a>
-        <a
-          href="www.linkedin.com/in/daniel-felipe-castro-moreno"
-          target="_blank"
-          title="Linkedin"
-        >
-          <img
-            src="../images/linkedin.png"
-            height="40"
-            width="40"
-            alt="Linkedin"
-          />
-        </a>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">
+          &copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Dani2044" target="_blank" rel="noopener" title="GitHub">
+            <img src="../images/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+          >
+            <img src="../images/instagram.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-felipe-castro-moreno"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+          >
+            <img src="../images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
       </div>
-      <p>&copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.</p>
     </footer>
   </body>
 </html>

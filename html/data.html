@@ -3,126 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biographic data - Daniel Felipe Castro Moreno</title>
+    <title>Biography — Daniel Felipe Castro Moreno</title>
     <meta
       name="description"
-      content="Learn about Daniel Castro, his experience, passion, and skills"
+      content="Biographic data and profile of Daniel Felipe Castro Moreno."
     />
     <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/header_footer.css" />
     <link rel="stylesheet" href="../css/biography.css" />
   </head>
 
   <body>
-    <header class="header">
-      <div class="menu_bar">
-        <img src="../images/world.jpeg" height="50" width="50" alt="Globe" />
-        <h1 class="title">Daniel Felipe Castro Moreno</h1>
-        <nav>
-          <ul class="unordered_list">
-            <li><a href="index.html">📌 Home</a></li>
-            <li><a href="data.html">📜 Biography</a></li>
-            <li><a href="cvs.html">🗂 Resume</a></li>
-            <li><a href="hobbies.html">🎭 Hobbies</a></li>
+    <header class="site-header">
+      <div class="container navbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">DC</span>
+          <span class="brand-name">Daniel Felipe Castro Moreno</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data.html" class="active">Biography</a></li>
+            <li><a href="cvs.html">Resume</a></li>
+            <li><a href="hobbies.html">Interests</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <h1>Biographic Data</h1>
-      <br />
-      <section class="biography">
-        <table>
-          <thead>
-            <tr>
-              <th>Field</th>
-              <th>Details</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Full Name</td>
-              <td>Daniel Felipe Castro Moreno</td>
-            </tr>
-            <tr>
-              <td>Date of Birth</td>
-              <td>October 10, 2004</td>
-            </tr>
-            <tr>
-              <td>Place of Birth</td>
-              <td>Bogotá, D.C.</td>
-            </tr>
-            <tr>
-                <td>Nationality</td>
-                <td>Colombian</td>
-              </tr>
-            <tr>
-              <td>Education</td>
-              <td>
-                Currently studying Systems Engineering at the Pontifical Xavierian University
-              </td>
-            </tr>
-            <tr>
-              <td>Profession / Occupation</td>
-              <td>Systems Engineer Student</td>
-            </tr>
-            <tr>
-              <td>Family</td>
-              <td>
-                Son of Omeiro Castro Ramirez and Ana Milena Moreno Pérez, and brother of Juan José Castro Moreno
-              </td>
-            </tr>
-            <tr>
-              <td>Professional Career</td>
-              <td>
-                Did a professional internship at Infotegra in 2024
-              </td>
-            </tr>
-            <tr>
-              <td>Awards / Recognitions</td>
-              <td>
-                Received the Academic Merit Scholarship for two consecutive semesters
-              </td>
-            </tr>
-            <tr>
-              <td>Personal and Social Situation</td>
-              <td>Single, lives with family in Bogotá</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <footer>
-      <div class="social-links">
-        <a href="https://github.com/Dani2044" target="_blank" title="GitHub">
-          <img src="../images/github.png" height="40" width="40" alt="GitHub" />
-        </a>
-        <a
-          href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
-          target="_blank"
-          title="Instagram"
-        >
-          <img
-            src="../images/instagram.png"
-            height="40"
-            width="40"
-            alt="Instagram"
-          />
-        </a>
-        <a
-          href="www.linkedin.com/in/daniel-felipe-castro-moreno"
-          target="_blank"
-          title="Linkedin"
-        >
-          <img
-            src="../images/linkedin.png"
-            height="40"
-            width="40"
-            alt="Linkedin"
-          />
-        </a>
+
+    <main class="container">
+      <h1 class="page-title">Biography</h1>
+      <p class="lead">
+        A snapshot of who I am — from where I come from to what I'm working
+        toward.
+      </p>
+
+      <div class="bio-layout">
+        <aside class="card bio-profile">
+          <img src="../images/profile_picture.jpg" alt="Portrait of Daniel Castro" />
+          <h2>Daniel Felipe Castro Moreno</h2>
+          <p class="role">Systems Engineering Student — Javeriana</p>
+          <p class="bio-tagline">
+            Driven by curiosity for software, artificial intelligence and
+            automation. Awarded the Academic Merit Scholarship for two
+            consecutive semesters for the highest GPA in the faculty.
+          </p>
+        </aside>
+
+        <section class="facts" aria-label="Biographic facts">
+          <article class="card fact">
+            <span class="fact-label">Full name</span>
+            <span class="fact-value">Daniel Felipe Castro Moreno</span>
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Date of birth</span>
+            <span class="fact-value">October 10, 2004</span>
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Place of birth</span>
+            <span class="fact-value">Bogotá, D.C., Colombia</span>
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Nationality</span>
+            <span class="fact-value">Colombian</span>
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Education</span>
+            <span class="fact-value"
+              >Systems Engineering — Pontificia Universidad Javeriana</span
+            >
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Occupation</span>
+            <span class="fact-value">Systems Engineering Student</span>
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Family</span>
+            <span class="fact-value"
+              >Son of Omeiro Castro Ramirez and Ana Milena Moreno Pérez, brother
+              of Juan José Castro Moreno</span
+            >
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Professional career</span>
+            <span class="fact-value"
+              >Software Development Assistant internship at Infotegra (2024)</span
+            >
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Awards &amp; recognition</span>
+            <span class="fact-value"
+              >Academic Merit Scholarship for two consecutive semesters</span
+            >
+          </article>
+          <article class="card fact">
+            <span class="fact-label">Personal situation</span>
+            <span class="fact-value">Based in Bogotá, Colombia</span>
+          </article>
+        </section>
       </div>
-      <p>&copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.</p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-note">
+          &copy; 2025 Daniel Felipe Castro Moreno. All rights reserved.
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/Dani2044" target="_blank" rel="noopener" title="GitHub">
+            <img src="../images/github.png" alt="GitHub" />
+          </a>
+          <a
+            href="https://www.instagram.com/danielcastrofm/profilecard/?igsh=YzYwMzR1Yzl0MGQ5"
+            target="_blank"
+            rel="noopener"
+            title="Instagram"
+          >
+            <img src="../images/instagram.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/daniel-felipe-castro-moreno"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+          >
+            <img src="../images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
